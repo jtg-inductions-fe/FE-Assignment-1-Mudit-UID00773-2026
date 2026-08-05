@@ -1,0 +1,16 @@
+@use '../abstract/functions' as *;
+
+//made these for mobile will update later with media query
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: get-font-weight(bold);
+    font-size: rem(get-font-size(large));
+    color: get-color(text-white);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: get-font-weight(bold);
+    font-size: rem(get-font-size(large));
+    color: get-color(text-primary-heading);
+}
