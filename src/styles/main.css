@@ -9,30 +9,40 @@ ul {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
     color: #eb9b00;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: #eb9b00;
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: Poppins;
     src: url('/assets/fonts/poppins-regular-webfont.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Josefin Sans';
+    font-family: Josefin-Sans;
     src: url('/assets/fonts/Josefin-Sans-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar__menu-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.25rem;
 } /*# sourceMappingURL=main.css.map */
