@@ -1,21 +1,5 @@
-@use './variables' as *;
-
-@use 'sass:map';
-
 @use 'sass:math';
 
 @function rem($px) {
     @return math.div($px, 16) * 1rem;
-}
-
-@function get-font-weight($wt) {
-    @return map.get($weights, $wt);
-}
-
-@function get-font-size($size) {
-    @return map.get($font-size, $size);
-}
-
-@function get-color($color) {
-    @return map.get($colors, $color);
 }

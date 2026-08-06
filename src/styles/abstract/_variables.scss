@@ -1,38 +1,29 @@
-$breakpoints: (
-    sm: 428px,
-    md: 1024px,
-    lg: 1728px,
-); //these are acc to figma ui, as disscussed
+$breakpoint-sm: 428px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1728px;
 
-$colors: (
-    text-primary-heading: #eb9b00,
-    text-secondary-heading: #002f52,
-    text-regular: #000000,
-    text-light: #474646,
-    text-extra-light: #474646,
-    text-white: #ffffff,
-    bg-regular: #ffffff,
+$color-text-primary-heading: #eb9b00;
+$color-text-secondary-heading: #002f52;
+$color-text-regular: #000000;
+$color-text-light: #474646;
+$color-text-extra-light: #474646;
+$color-text-white: #ffffff;
+$color-bg-regular: #ffffff;
 
-    bg-light: #ebecee,
-    bg-gradient: linear-gradient(to right, #002f52, #326589),
-    bg-btn-inactive: #c4c4c4,
-);
+$color-bg-light: #ebecee;
+$color-bg-gradient: linear-gradient(to right, #002f52, #326589);
+$color-bg-btn-inactive: #c4c4c4;
 
-$weights: (
-    light: 300,
-    regular: 400,
-    medium: 500,
-    semi-bold: 600,
-    bold: 700,
-);
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
 
-// All of these size are in px will be converted to rem
-$font-size: (
-    small: 14,
-    regular: 16,
-    large: 18,
-    larger: 20,
-    extra-large: 24,
-    largest: 32,
-    extra-largest: 36,
-);
+$font-size-small: 14;
+$font-size-regular: 16;
+$font-size-large: 18;
+$font-size-larger: 20;
+$font-size-extra-large: 24;
+$font-size-largest: 32;
+$font-size-extra-largest: 36;
