@@ -1,16 +1,15 @@
 @use '../abstract/functions' as *;
 @use '../abstract/variables' as *;
 
-//made these for mobile will update later with media query
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: $font-weight-bold;
     font-size: rem($font-size-large);
     color: $color-text-primary-heading;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: $font-weight-bold;
     font-size: rem($font-size-largest);
     color: $color-text-primary-heading;
