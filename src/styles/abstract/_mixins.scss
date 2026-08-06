@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin mobile-view {
+    @media screen and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin tablet-view {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
