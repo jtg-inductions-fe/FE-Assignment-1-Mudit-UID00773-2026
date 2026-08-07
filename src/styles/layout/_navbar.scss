@@ -44,6 +44,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        background: $color-text-white;
     }
 
     &__menu-dropdown-item {
@@ -124,6 +125,8 @@
         padding: rem(16);
         text-transform: uppercase;
         color: $color-text-secondary;
+        width: 100%;
+        text-align: left;
 
         &:hover {
             background: $color-bg-gradient;
