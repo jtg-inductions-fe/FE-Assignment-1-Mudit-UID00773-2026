@@ -4,12 +4,17 @@ h1 {
     font-family: Poppins, sans-serif;
     font-weight: $font-weight-bold;
     font-size: rem($font-size-large);
-    color: $color-text-primary;
+    color: $color-text-white;
+
+    @include tablet-view {
+        font-size: rem($font-size-extra-largest);
+        font-weight: $font-weight-bold;
+    }
 }
 
 h2 {
     font-family: Poppins, sans-serif;
     font-weight: $font-weight-bold;
-    font-size: rem($font-size-largest);
+    font-size: rem($font-size-large);
     color: $color-text-primary;
 }

@@ -41,6 +41,9 @@
 
     &__menu-dropdown-list {
         padding-top: rem(4);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__menu-dropdown-item {
@@ -138,6 +141,9 @@
         @include respond-to('tablet') {
             gap: rem(48);
             padding: rem(18) rem(10);
+        }
+        @include desktop-view {
+            gap: rem(116);
         }
     }
 
