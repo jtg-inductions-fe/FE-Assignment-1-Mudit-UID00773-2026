@@ -1,43 +1,43 @@
-const menuIconContainer = document.querySelector(
-    '.navbar__menu-icon-container',
-);
-const menuDropDownContainer = document.querySelector('.navbar__menu-dropdown');
+const menuIconContainer = document.querySelector('.js-menu-toggle');
+const menuDropDownContainer = document.querySelector('.js-menu-dropdown');
 let isMenuActive = false;
 
+/**
+ * Opens or closes the drop-down menu when the menu button is clicked.
+ * It also stops the click from triggering other actions elsewhere on the page.
+ */
 const handleMenuClick = (event) => {
-    /**
-     * This is used to handle the opening and closing of the menu dropdown when the menu icon is clicked. Also prevents propagation to outside elements.
-     */
     event.stopPropagation();
     if (!isMenuActive) {
         isMenuActive = true;
         menuIconContainer.classList.add('navbar__menu-icon-container--clicked');
-        menuDropDownContainer.style.display = 'block';
+        menuDropDownContainer.classList.remove('u-hidden');
     } else {
         isMenuActive = false;
         menuIconContainer.classList.remove(
             'navbar__menu-icon-container--clicked',
         );
-        menuDropDownContainer.style.display = 'none';
+        menuDropDownContainer.classList.add('u-hidden');
     }
 };
 
 menuIconContainer.addEventListener('click', handleMenuClick);
 
-const linkDropdown = document.querySelector('.navbar__link-dropdown');
-const linkItem = document.querySelector('.navbar__link-item');
+const linkDropdown = document.querySelector('.js-link-dropdown');
+const linkItem = document.querySelector('.js-link-item');
 
 let isLinkOpen = false;
+/**
+ * Opens or closes the links drop-down menu when the link is clicked.
+ * It also stops the click from triggering other actions elsewhere on the page.
+ */
 const handleLinkClick = (event) => {
-    /**
-     * This is used to handle the opening and closing of the links dropdown when the link is clicked. Also prevents propagation to outside elements.
-     */
     event.stopPropagation();
 
     if (!isLinkOpen) {
-        linkDropdown.style.display = 'block';
+        linkDropdown.classList.remove('u-hidden');
     } else {
-        linkDropdown.style.display = 'none';
+        linkDropdown.classList.add('u-hidden');
     }
 
     isLinkOpen = !isLinkOpen;

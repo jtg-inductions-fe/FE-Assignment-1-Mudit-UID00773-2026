@@ -1,6 +1,8 @@
-$breakpoint-sm: 428px;
-$breakpoint-md: 1024px;
-$breakpoint-lg: 1728px;
+$breakpoints: (
+    'mobile': 428px,
+    'tablet': 1024px,
+    'desktop': 1728px,
+);
 $color-text-primary: #eb9b00;
 $color-text-secondary: #002f52;
 $color-text-regular: #000000;
