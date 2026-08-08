@@ -1,0 +1,33 @@
+@use '../abstract' as *;
+
+.latest-section {
+    &__header {
+        background: $color-bg-regular;
+        padding: rem(18);
+
+        @include all-center;
+        @include tablet-view {
+            padding: rem(40);
+        }
+
+        h2 {
+            font-size: rem($font-size-larger);
+
+            @include tablet-view {
+                font-size: rem(28);
+            }
+        }
+    }
+
+    &__container {
+        background: $color-bg-light;
+
+        @include desktop-view {
+            @include all-center;
+            justify-content: center;
+            align-items: flex-end;
+            gap: rem(0);
+            padding: rem(72) rem(140);
+        }
+    }
+}
