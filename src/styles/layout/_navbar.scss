@@ -145,7 +145,7 @@
             gap: rem(48);
             padding: rem(18) rem(10);
         }
-        @include desktop-view {
+        @include respond-to('desktop') {
             gap: rem(116);
         }
     }

@@ -6,7 +6,7 @@ h1 {
     font-size: rem($font-size-large);
     color: $color-text-white;
 
-    @include tablet-view {
+    @include respond-to('tablet') {
         font-size: rem($font-size-extra-largest);
         font-weight: $font-weight-bold;
     }

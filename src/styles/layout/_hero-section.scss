@@ -6,7 +6,7 @@
     gap: rem(14);
 
     @include all-center(column);
-    @include tablet-view {
+    @include respond-to('tablet') {
         padding: rem(94) rem(94) rem(82) rem(94);
         gap: rem(8);
     }
@@ -26,8 +26,26 @@
         margin-top: rem(6);
 
         @include all-center;
-        @include tablet-view {
+        @include respond-to('tablet') {
             margin-top: rem(16);
+        }
+    }
+
+    &__input-icon {
+        position: absolute;
+        color: $color-text-white;
+        pointer-events: none;
+        font-size: rem($font-size-regular);
+        left: rem(24);
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond-to('tablet') {
+            left: calc(50% - rem(240) + rem(24));
+            font-size: rem($font-size-large);
+        }
+        @include respond-to('desktop') {
+            left: calc(50% - rem(290) + rem(24));
         }
     }
 
@@ -38,12 +56,13 @@
         padding: rem(14) rem(24);
         border-radius: rem(32);
         text-align: center;
+        color: $color-text-white;
 
-        @include tablet-view {
+        @include respond-to('tablet') {
             width: rem(480);
             padding: rem(20);
         }
-        @include desktop-view {
+        @include respond-to('desktop') {
             width: rem(580);
         }
 
@@ -52,7 +71,7 @@
             font-weight: $font-weight-regular;
             font-size: rem($font-size-regular);
 
-            @include tablet-view {
+            @include respond-to('tablet') {
                 font-size: rem($font-size-large);
             }
         }
