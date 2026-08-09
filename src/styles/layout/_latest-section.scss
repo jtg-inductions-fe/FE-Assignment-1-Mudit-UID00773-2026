@@ -1,6 +1,7 @@
 @use '../abstract' as *;
 
-.latest-section {
+.latest-section,
+.bestseller-section {
     &__header {
         background: $color-bg-regular;
         padding: rem(18);
