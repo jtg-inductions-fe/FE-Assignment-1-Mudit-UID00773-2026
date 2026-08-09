@@ -6,10 +6,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/styles/main.scss" />
-        <link
-            rel="stylesheet"
-            href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-        />
     </head>
     <body>
         <!-- NavBar -->
@@ -177,25 +173,25 @@
                                 <li class="glide__slide carousel__item">
                                     <img
                                         src="/assets/images/ApacheKafka.png"
-                                        alt="image"
+                                        alt="ApacheKafka"
                                     />
                                 </li>
                                 <li class="glide__slide carousel__item">
                                     <img
                                         src="/assets/images/Liderança.png"
-                                        alt="image"
+                                        alt="Liderança"
                                     />
                                 </li>
                                 <li class="glide__slide carousel__item">
                                     <img
                                         src="/assets/images/Javascript.png"
-                                        alt="image"
+                                        alt="Javascript"
                                     />
                                 </li>
                                 <li class="glide__slide carousel__item">
                                     <img
                                         src="/assets/images/Portugol.png"
-                                        alt="image"
+                                        alt="Logic Portugol"
                                     />
                                 </li>
                             </ul>
@@ -257,51 +253,10 @@
             </div>
         </section>
 
-        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
         <script
             src="https://kit.fontawesome.com/d0e6bd4543.js"
             crossorigin="anonymous"
         ></script>
-        <script>
-            new Glide('.glide', {
-                type: 'carousel',
-                activeNav: 'glide__bullet--active',
-                rewind: true,
-                startAt: 0,
-                perView: 3,
-                peek: {
-                    before: 0,
-                    after: 0,
-                },
-                gap: 68,
-                breakpoints: {
-                    1023: {
-                        perView: 2,
-                        gap: 26,
-                        peek: {
-                            before: 128,
-                            after: 128,
-                        },
-                    },
-                    576: {
-                        perView: 1,
-                        gap: 26,
-                        peek: {
-                            before: 128,
-                            after: 128,
-                        },
-                    },
-                    427: {
-                        perView: 1,
-                        gap: 26,
-                        peek: {
-                            before: 100,
-                            after: 100,
-                        },
-                    },
-                },
-            }).mount();
-        </script>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>

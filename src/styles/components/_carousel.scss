@@ -7,10 +7,10 @@
     position: relative;
 
     @include all-center(column);
-    @include tablet-view {
+    @include respond-to('tablet') {
         padding: rem(30) rem(0);
     }
-    @include desktop-view {
+    @include respond-to('desktop') {
         padding: 0;
     }
 }
@@ -20,7 +20,7 @@
     max-width: rem(724);
     margin: 0 auto;
 
-    @include desktop-view {
+    @include respond-to('desktop') {
         max-width: rem(672);
     }
 
@@ -31,11 +31,11 @@
         margin-bottom: rem(16);
 
         @include all-center;
-        @include tablet-view {
+        @include respond-to('tablet') {
             gap: rem(12);
             margin-bottom: rem(76);
         }
-        @include desktop-view {
+        @include respond-to('desktop') {
             padding: 0;
             margin-bottom: rem(40);
         }
@@ -50,7 +50,7 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
 
-        @include tablet-view {
+        @include respond-to('tablet') {
             width: rem(12);
             height: rem(12);
         }
@@ -63,7 +63,7 @@
     &__tracks {
         height: rem(250);
 
-        @include tablet-view {
+        @include respond-to('tablet') {
             height: rem(280);
         }
     }
@@ -76,10 +76,10 @@
             height: rem(248);
             object-fit: cover;
 
-            @include tablet-view {
+            @include respond-to('tablet') {
                 height: rem(268);
             }
-            @include desktop-view {
+            @include respond-to('desktop') {
                 height: rem(260);
             }
         }
@@ -88,7 +88,7 @@
     &__arrows {
         display: none;
 
-        @include tablet-view {
+        @include respond-to('tablet') {
             display: block;
             position: absolute;
             z-index: 1;
