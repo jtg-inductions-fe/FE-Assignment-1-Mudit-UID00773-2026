@@ -195,7 +195,7 @@
 }
 
 .author-card-right {
-    gap: rem(8);
+    gap: rem(40);
 
     @include respond-to('desktop') {
         gap: rem(28);
