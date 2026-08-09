@@ -92,9 +92,9 @@
         color: $color-text-primary;
 
         @include respond-to('tablet') {
-            font-size: rem($font-size-largest);
         }
         @include respond-to('desktop') {
+            font-size: rem($font-size-largest);
             max-width: rem(300);
             padding-right: rem(0);
             line-height: 135%;

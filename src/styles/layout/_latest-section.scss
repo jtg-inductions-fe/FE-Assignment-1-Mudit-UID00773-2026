@@ -21,6 +21,11 @@
 
     &__container {
         background: $color-bg-light;
+        padding-bottom: rem(20);
+
+        @include respond-to('tablet') {
+            padding-bottom: rem(48);
+        }
 
         @include respond-to('desktop') {
             @include all-center;
