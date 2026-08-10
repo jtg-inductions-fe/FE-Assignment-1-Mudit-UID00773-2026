@@ -1,0 +1,27 @@
+@use 'variables' as *;
+@use 'sass:map';
+
+// @mixin mobile-view {
+//     @media screen and (min-width: $breakpoint-sm) {
+//         @content;
+//     }
+// }
+
+// @mixin respond-to('tablet'){
+//     @media screen and (min-width: $breakpoint-md) {
+//         @content;
+//     }
+// }
+
+// @mixin respond-to('desktop') {
+//     @media screen and (min-width: $breakpoint-lg) {
+//         @content;
+//     }
+// }
+
+@mixin respond-to($breakpoint-name) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint-name);
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}

@@ -8,6 +8,71 @@
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <div class="navbar__menu-container">
+                <button class="navbar__menu-icon-container js-menu-toggle">
+                    <i class="fa-solid fa-bars navbar__menu-icon"></i>
+                </button>
+                <div class="navbar__menu-dropdown u-hidden js-menu-dropdown">
+                    <ul class="navbar__menu-dropdown-list">
+                        <p class="navbar__menu-dropdown-item">Categories</p>
+                        <p class="navbar__menu-dropdown-item">Programming</p>
+                        <p class="navbar__menu-dropdown-item">Front-End</p>
+                        <p class="navbar__menu-dropdown-item">Infratructure</p>
+                        <p class="navbar__menu-dropdown-item">Buisness</p>
+                        <p class="navbar__menu-dropdown-item">Design & UX</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar__logo-conatiner">
+                <img
+                    src="/assets/images/Logo.png"
+                    alt="AluraBooks"
+                    class="navbar__logo-icon"
+                />
+                <span class="navbar__logo-text">
+                    <span class="navbar__logo-text--bold">Alura</span>Books
+                </span>
+            </div>
+
+            <!-- Desktop icons -->
+            <div class="navbar__links-container">
+                <div class="navbar__link-item js-link-item">
+                    <a href="#">CATEGORIES</a>
+                    <ul class="navbar__link-dropdown u-hidden js-link-dropdown">
+                        <p class="navbar__link-dropdown-item">Programming</p>
+                        <p class="navbar__link-dropdown-item">Front-End</p>
+                        <p class="navbar__link-dropdown-item">Infratructure</p>
+                        <p class="navbar__link-dropdown-item">Buisness</p>
+                        <p class="navbar__link-dropdown-item">Design & UX</p>
+                    </ul>
+                </div>
+                <div class="navbar__link-item">
+                    <a href="#">FAVORITES</a>
+                </div>
+                <div class="navbar__link-item">
+                    <a href="#">MY BOOKSHELF</a>
+                </div>
+            </div>
+
+            <div class="navbar__options">
+                <div class="navbar__option-container">
+                    <i class="fa-regular fa-heart navbar__option-icon"></i>
+                </div>
+                <div class="navbar__option-container">
+                    <i class="fa-solid fa-bag-shopping navbar__option-icon"></i>
+                    <span class="navbar__option-text">My Bag</span>
+                </div>
+                <div class="navbar__option-container">
+                    <i
+                        class="fa-regular fa-circle-user navbar__option-icon"
+                    ></i>
+                    <span class="navbar__option-text">My Profile</span>
+                </div>
+            </div>
+        </nav>
+
         <!-- Directly using script of fontawesome -->
         <script
             src="https://kit.fontawesome.com/d0e6bd4543.js"
