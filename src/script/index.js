@@ -1,5 +1,11 @@
+import { initCarousels } from './carousel.js';
+
 const menuIconContainer = document.querySelector('.js-menu-toggle');
 const menuDropDownContainer = document.querySelector('.js-menu-dropdown');
+const linkDropdown = document.querySelector('.js-link-dropdown');
+const linkItem = document.querySelector('.js-link-item');
+
+let isLinkOpen = false;
 let isMenuActive = false;
 
 /**
@@ -21,12 +27,6 @@ const handleMenuClick = (event) => {
     }
 };
 
-menuIconContainer.addEventListener('click', handleMenuClick);
-
-const linkDropdown = document.querySelector('.js-link-dropdown');
-const linkItem = document.querySelector('.js-link-item');
-
-let isLinkOpen = false;
 /**
  * Opens or closes the links drop-down menu when the link is clicked.
  * It also stops the click from triggering other actions elsewhere on the page.
@@ -43,4 +43,14 @@ const handleLinkClick = (event) => {
     isLinkOpen = !isLinkOpen;
 };
 
-linkItem.addEventListener('click', handleLinkClick);
+document.addEventListener('DOMContentLoaded', () => {
+    initCarousels();
+
+    if (menuIconContainer) {
+        menuIconContainer.addEventListener('click', handleMenuClick);
+    }
+
+    if (linkItem && linkDropdown) {
+        linkItem.addEventListener('click', handleLinkClick);
+    }
+});
