@@ -16,12 +16,36 @@
                 </button>
                 <div class="navbar__menu-dropdown u-hidden js-menu-dropdown">
                     <ul class="navbar__menu-dropdown-list">
-                        <p class="navbar__menu-dropdown-item">Categories</p>
-                        <p class="navbar__menu-dropdown-item">Programming</p>
-                        <p class="navbar__menu-dropdown-item">Front-End</p>
-                        <p class="navbar__menu-dropdown-item">Infratructure</p>
-                        <p class="navbar__menu-dropdown-item">Buisness</p>
-                        <p class="navbar__menu-dropdown-item">Design & UX</p>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Categories
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Front-End
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Infratructure
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Buisness
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Programming
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Design & UX
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -41,11 +65,31 @@
                 <div class="navbar__link-item js-link-item">
                     <a href="#">CATEGORIES</a>
                     <ul class="navbar__link-dropdown u-hidden js-link-dropdown">
-                        <p class="navbar__link-dropdown-item">Programming</p>
-                        <p class="navbar__link-dropdown-item">Front-End</p>
-                        <p class="navbar__link-dropdown-item">Infratructure</p>
-                        <p class="navbar__link-dropdown-item">Buisness</p>
-                        <p class="navbar__link-dropdown-item">Design & UX</p>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Programming
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Front-End
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Infratructure
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Buisness
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Design & UX
+                            </button>
+                        </li>
                     </ul>
                 </div>
                 <div class="navbar__link-item">
@@ -57,21 +101,43 @@
             </div>
 
             <div class="navbar__options">
-                <div class="navbar__option-container">
+                <button class="navbar__option-container">
                     <i class="fa-regular fa-heart navbar__option-icon"></i>
-                </div>
-                <div class="navbar__option-container">
+                </button>
+                <button class="navbar__option-container">
                     <i class="fa-solid fa-bag-shopping navbar__option-icon"></i>
                     <span class="navbar__option-text">My Bag</span>
-                </div>
-                <div class="navbar__option-container">
+                </button>
+                <button class="navbar__option-container">
                     <i
                         class="fa-regular fa-circle-user navbar__option-icon"
                     ></i>
                     <span class="navbar__option-text">My Profile</span>
-                </div>
+                </button>
             </div>
         </nav>
+
+        <main class="hero-section">
+            <h1 class="hero-section__heading">
+                Do you already know where to start?
+            </h1>
+            <p class="hero-section__info">
+                Find what you need for your development on our bookshelf!
+            </p>
+
+            <div class="hero-section__input-container">
+                <i
+                    class="fa-solid fa-magnifying-glass hero-section__input-icon"
+                    aria-hidden="true"
+                ></i>
+                <input
+                    type="text"
+                    class="hero-section__input"
+                    placeholder="What will your next read be?"
+                    aria-label="Search for book to read"
+                />
+            </div>
+        </main>
 
         <!-- Directly using script of fontawesome -->
         <script

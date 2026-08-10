@@ -41,6 +41,10 @@
 
     &__menu-dropdown-list {
         padding-top: rem(4);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: $color-text-white;
     }
 
     &__menu-dropdown-item {
@@ -121,6 +125,8 @@
         padding: rem(16);
         text-transform: uppercase;
         color: $color-text-secondary;
+        width: 100%;
+        text-align: left;
 
         &:hover {
             background: $color-bg-gradient;
@@ -138,6 +144,9 @@
         @include respond-to('tablet') {
             gap: rem(48);
             padding: rem(18) rem(10);
+        }
+        @include respond-to('desktop') {
+            gap: rem(116);
         }
     }
 
