@@ -1,0 +1,21 @@
+@use '../abstract' as *;
+
+.footer {
+    padding: rem(20) rem(24);
+
+    @include respond-to('tablet') {
+        padding: rem(64) rem(24);
+
+        @include all-center;
+    }
+
+    &__heading {
+        font-size: rem($font-size-regular);
+        font-weight: $font-weight-regular;
+        color: $color-text-regular;
+
+        @include respond-to('tablet') {
+            font-size: rem($font-size-extra-large);
+        }
+    }
+}
