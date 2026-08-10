@@ -4,9 +4,38 @@
     padding: rem(20) rem(24);
 
     @include respond-to('tablet') {
-        padding: rem(64) rem(24);
+        padding: rem(60) rem(24);
 
         @include all-center;
+        align-items: flex-start;
+        gap: rem(108);
+    }
+
+    @include respond-to('desktop') {
+        gap: rem(92);
+    }
+
+    &__container {
+        @include respond-to('desktop') {
+            padding-left: rem(20);
+            border-left: rem(1) solid black;
+            width: rem(212);
+        }
+    }
+
+    &__flex {
+        @include all-center;
+        align-items: stretch;
+        gap: rem(60);
+        display: none;
+
+        @include respond-to('tablet') {
+            display: flex;
+        }
+
+        @include respond-to('desktop') {
+            gap: rem(188);
+        }
     }
 
     &__heading {
@@ -17,5 +46,37 @@
         @include respond-to('tablet') {
             font-size: rem($font-size-extra-large);
         }
+    }
+
+    &__sub-heading {
+        color: #858585;
+        font-size: rem($font-size-small);
+        font-weight: $font-weight-light;
+    }
+}
+
+.logo-container {
+    @include all-center(column);
+    align-items: flex-start;
+    gap: rem(16);
+    margin-top: rem(24);
+
+    &__item {
+        @include all-center;
+        justify-content: flex-start;
+        gap: rem(8);
+    }
+
+    &__logo {
+        width: rem(36);
+        height: rem(36);
+        border-radius: 100%;
+        filter: grayscale(100%);
+    }
+
+    &__info {
+        font-family: Poppins;
+        color: $color-text-light;
+        font-size: rem($font-size-small);
     }
 }
