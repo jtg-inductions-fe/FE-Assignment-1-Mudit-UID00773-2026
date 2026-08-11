@@ -36,16 +36,16 @@
         color: $color-text-white;
         pointer-events: none;
         font-size: rem($font-size-regular);
-        left: rem(24);
+        left: calc(50% - rem(128));
         top: 50%;
         transform: translateY(-50%);
 
         @include respond-to('tablet') {
-            left: calc(50% - rem(240) + rem(24));
+            left: calc(50% - rem(240) + rem(100));
             font-size: rem($font-size-large);
         }
         @include respond-to('desktop') {
-            left: calc(50% - rem(290) + rem(24));
+            left: calc(50% - rem(290) + rem(140));
         }
     }
 
