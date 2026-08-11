@@ -55,6 +55,8 @@
         letter-spacing: 0.5px;
         color: $color-text-secondary;
         padding: rem(20) rem(24);
+        text-align: left;
+        width: rem(300);
 
         &:hover {
             font-weight: $font-weight-bold;
