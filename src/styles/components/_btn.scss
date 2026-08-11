@@ -1,0 +1,19 @@
+@use '../abstract' as *;
+
+.btn {
+    background-color: $color-bg-primary;
+    color: $color-text-white;
+    font-size: rem($font-size-small);
+    font-weight: $font-weight-bold;
+    padding: rem(16) rem(24);
+
+    @include respond-to('tablet') {
+        font-size: rem($font-size-extra-large);
+        font-weight: $font-weight-bold;
+        padding: rem(24) rem(32);
+    }
+
+    @include respond-to('desktop') {
+        padding: rem(28) rem(32);
+    }
+}
