@@ -1,0 +1,100 @@
+@use '../abstract' as *;
+
+.newsletter-section {
+    padding: rem(28) rem(24);
+    border-bottom: rem(1) solid black;
+    display: block;
+
+    @include respond-to('tablet') {
+        @include all-center;
+
+        padding: rem(40) rem(24);
+        gap: rem(16);
+    }
+
+    @include respond-to('desktop') {
+        padding-bottom: rem(48);
+    }
+
+    &__info-container {
+        @include all-center(column);
+
+        align-items: flex-start;
+        gap: rem(12);
+
+        @include respond-to('tablet') {
+            max-width: rem(376);
+            margin-right: rem(12);
+        }
+
+        @include respond-to('desktop') {
+            margin-right: rem(60);
+        }
+    }
+
+    &__heading {
+        font-family: Poppins;
+        font-weight: $font-weight-regular;
+        font-size: rem($font-size-large);
+        color: $color-text-secondary;
+
+        @include respond-to('tablet') {
+            font-size: rem($font-size-extra-large);
+            font-weight: $font-weight-bold;
+            line-height: 140%;
+        }
+    }
+
+    &__info {
+        font-family: Poppins;
+        font-weight: $font-weight-light;
+        color: #326589;
+        line-height: 160%;
+
+        @include respond-to('tablet') {
+            padding-right: rem(32);
+        }
+    }
+
+    &__input-container {
+        position: relative;
+        margin: 0 auto 0;
+        text-align: center;
+        width: 100%;
+
+        @include respond-to('tablet') {
+            margin: 0;
+            width: rem(326);
+            margin-top: rem(-40);
+        }
+
+        @include respond-to('desktop') {
+            width: rem(340);
+        }
+    }
+
+    &__input {
+        padding: rem(14) rem(56);
+        margin: 0 auto 0;
+        border: rem(1) solid $color-text-secondary;
+        border-radius: rem(40);
+        width: 100%;
+        margin-top: rem(20);
+
+        &::placeholder {
+            font-family: Poppins;
+            color: $color-text-secondary;
+            font-size: rem($font-size-regular);
+            letter-spacing: rem(0.5);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        z-index: 1;
+        left: rem(24);
+        top: 50%;
+        font-size: rem($font-size-larger);
+        color: $color-text-secondary;
+    }
+}
