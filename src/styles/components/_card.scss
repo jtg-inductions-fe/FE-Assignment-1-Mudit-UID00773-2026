@@ -1,7 +1,6 @@
 @use '../abstract' as *;
 
 .card-container {
-    width: 100%;
     padding: rem(0) rem(24);
     height: 100%;
     margin-top: rem(8);
@@ -95,7 +94,7 @@
         }
         @include respond-to('desktop') {
             font-size: rem($font-size-largest);
-            max-width: rem(340);
+            max-width: rem(352);
             padding-right: rem(0);
             line-height: 135%;
         }
