@@ -1,6 +1,7 @@
 @use '../abstract' as *;
 
-.latest-section {
+.latest-section,
+.bestseller-section {
     &__header {
         background: $color-bg-regular;
         padding: rem(18);
@@ -32,7 +33,7 @@
             justify-content: center;
             align-items: flex-end;
             gap: rem(0);
-            padding: rem(72) rem(140);
+            padding: rem(72) rem(140) rem(120) rem(140);
         }
     }
 }
