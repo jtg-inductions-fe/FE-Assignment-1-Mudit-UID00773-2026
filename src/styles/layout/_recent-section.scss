@@ -17,7 +17,6 @@
 
         @include respond-to('tablet') {
             font-size: rem($font-size-extra-large);
-            // font-weight: $font-weight-bold;
             padding: rem(12) rem(0);
         }
 
