@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>Alurabooks</title>
+        <meta
+            name="description"
+            content="Explore and buy the books at Alurabooks"
+        />
         <link rel="icon" type="image/png" href="/assets/images/Logo.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,38 +15,59 @@
         <!-- NavBar -->
         <nav class="navbar">
             <div class="navbar__menu-container">
-                <button class="navbar__menu-icon-container js-menu-toggle">
+                <button
+                    class="navbar__menu-icon-container js-menu-toggle"
+                    aria-label="menu-toggle"
+                >
                     <i class="fa-solid fa-bars navbar__menu-icon"></i>
                 </button>
                 <div class="navbar__menu-dropdown u-hidden js-menu-dropdown">
                     <ul class="navbar__menu-dropdown-list">
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="categories"
+                            >
                                 Categories
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="Frontend"
+                            >
                                 Front-End
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="Infratructure"
+                            >
                                 Infratructure
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="Buisness"
+                            >
                                 Buisness
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="Programming"
+                            >
                                 Programming
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__menu-dropdown-item">
+                            <button
+                                class="navbar__menu-dropdown-item"
+                                aria-label="Design & UX"
+                            >
                                 Design & UX
                             </button>
                         </li>
@@ -66,27 +91,42 @@
                     <a href="#">CATEGORIES</a>
                     <ul class="navbar__link-dropdown u-hidden js-link-dropdown">
                         <li>
-                            <button class="navbar__link-dropdown-item">
+                            <button
+                                class="navbar__link-dropdown-item"
+                                aria-label="Programming"
+                            >
                                 Programming
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__link-dropdown-item">
+                            <button
+                                class="navbar__link-dropdown-item"
+                                aria-label="Front-End"
+                            >
                                 Front-End
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__link-dropdown-item">
+                            <button
+                                class="navbar__link-dropdown-item"
+                                aria-label="Infratructure"
+                            >
                                 Infratructure
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__link-dropdown-item">
+                            <button
+                                class="navbar__link-dropdown-item"
+                                aria-label="Buis"
+                            >
                                 Buisness
                             </button>
                         </li>
                         <li>
-                            <button class="navbar__link-dropdown-item">
+                            <button
+                                class="navbar__link-dropdown-item"
+                                aria-label="Design & UX"
+                            >
                                 Design & UX
                             </button>
                         </li>
@@ -101,14 +141,17 @@
             </div>
 
             <div class="navbar__options">
-                <button class="navbar__option-container">
+                <button class="navbar__option-container" aria-label="Favorite">
                     <i class="fa-regular fa-heart navbar__option-icon"></i>
                 </button>
-                <button class="navbar__option-container">
+                <button class="navbar__option-container" aria-label="Cart">
                     <i class="fa-solid fa-bag-shopping navbar__option-icon"></i>
                     <span class="navbar__option-text">My Bag</span>
                 </button>
-                <button class="navbar__option-container">
+                <button
+                    class="navbar__option-container"
+                    aria-label="My Profile"
+                >
                     <i
                         class="fa-regular fa-circle-user navbar__option-icon"
                     ></i>
@@ -210,14 +253,14 @@
                                 data-glide-dir="<"
                                 aria-label="Previous slide"
                             >
-                                <p>&lt;</p>
+                                &lt;
                             </button>
                             <button
                                 class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
                                 data-glide-dir=">"
                                 aria-label="Next slide"
                             >
-                                <p>&gt;</p>
+                                &gt;
                             </button>
                         </div>
                     </div>
@@ -239,16 +282,18 @@
                             <div class="card-left__icons">
                                 <i
                                     class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                                 <i
                                     class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                             </div>
                         </div>
                         <div class="card-right">
                             <img
                                 src="/assets/images/Perfil-escritora 2.png"
-                                alt="image"
+                                alt="Angular"
                                 class="card-right__img"
                             />
                             <button class="card-right__button">
@@ -331,14 +376,14 @@
                                 data-glide-dir="<"
                                 aria-label="Previous slide"
                             >
-                                <p>&lt;</p>
+                                &lt;
                             </button>
                             <button
                                 class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
                                 data-glide-dir=">"
                                 aria-label="Next slide"
                             >
-                                <p>&gt;</p>
+                                &gt;
                             </button>
                         </div>
                     </div>
@@ -367,9 +412,11 @@
                             <div class="card-left__icons">
                                 <i
                                     class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                                 <i
                                     class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                             </div>
                         </div>
@@ -393,14 +440,32 @@
         <section class="recent-section">
             <h2 class="recent-section__header">RECENTLY VISITED TOPICS</h2>
             <div class="btn-container">
-                <button type="button" class="btn">Android</button>
-                <button type="button" class="btn">Marketing Digital</button>
-                <button type="button" class="btn">Agile</button>
-                <button type="button" class="btn">Startups</button>
-                <button type="button" class="btn">HTML & CSS</button>
-                <button type="button" class="btn">Python</button>
-                <button type="button" class="btn">OO</button>
-                <button type="button" class="btn">Java</button>
+                <button type="button" class="btn" aria-label="Android">
+                    Android
+                </button>
+                <button
+                    type="button"
+                    class="btn"
+                    aria-label="Marketing Digital"
+                >
+                    Marketing Digital
+                </button>
+                <button type="button" class="btn" aria-label="Agile">
+                    Agile
+                </button>
+                <button type="button" class="btn" aria-label="Startups">
+                    Startups
+                </button>
+                <button type="button" class="btn" aria-label="HTML & CSS">
+                    HTML & CSS
+                </button>
+                <button type="button" class="btn" aria-label="Python">
+                    Python
+                </button>
+                <button type="button" class="btn" aria-label="OO">OO</button>
+                <button type="button" class="btn" aria-label="Java">
+                    Java
+                </button>
             </div>
         </section>
 
