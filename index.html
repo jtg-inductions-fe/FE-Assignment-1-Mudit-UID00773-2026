@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>Alurabooks</title>
+        <meta
+            name="description"
+            content="Explore and buy the books at Alurabooks"
+        />
         <link rel="icon" type="image/png" href="/assets/images/Logo.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +15,10 @@
         <!-- NavBar -->
         <nav class="navbar">
             <div class="navbar__menu-container">
-                <button class="navbar__menu-icon-container js-menu-toggle">
+                <button
+                    class="navbar__menu-icon-container js-menu-toggle"
+                    aria-label="menu-toggle"
+                >
                     <i class="fa-solid fa-bars navbar__menu-icon"></i>
                 </button>
                 <div class="navbar__menu-dropdown u-hidden js-menu-dropdown">
@@ -101,14 +108,17 @@
             </div>
 
             <div class="navbar__options">
-                <button class="navbar__option-container">
+                <button class="navbar__option-container" aria-label="Favorite">
                     <i class="fa-regular fa-heart navbar__option-icon"></i>
                 </button>
-                <button class="navbar__option-container">
+                <button class="navbar__option-container" aria-label="Cart">
                     <i class="fa-solid fa-bag-shopping navbar__option-icon"></i>
                     <span class="navbar__option-text">My Bag</span>
                 </button>
-                <button class="navbar__option-container">
+                <button
+                    class="navbar__option-container"
+                    aria-label="My Profile"
+                >
                     <i
                         class="fa-regular fa-circle-user navbar__option-icon"
                     ></i>
@@ -210,14 +220,14 @@
                                 data-glide-dir="<"
                                 aria-label="Previous slide"
                             >
-                                <p>&lt;</p>
+                                &lt;
                             </button>
                             <button
                                 class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
                                 data-glide-dir=">"
                                 aria-label="Next slide"
                             >
-                                <p>&gt;</p>
+                                &gt;
                             </button>
                         </div>
                     </div>
@@ -239,16 +249,18 @@
                             <div class="card-left__icons">
                                 <i
                                     class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                                 <i
                                     class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                             </div>
                         </div>
                         <div class="card-right">
                             <img
-                                src="/assets/images/Perfil-escritora 2.png"
-                                alt="image"
+                                src="/assets/images/Perfil-escritora-2.png"
+                                alt="Angular"
                                 class="card-right__img"
                             />
                             <button class="card-right__button">
@@ -331,14 +343,14 @@
                                 data-glide-dir="<"
                                 aria-label="Previous slide"
                             >
-                                <p>&lt;</p>
+                                &lt;
                             </button>
                             <button
                                 class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
                                 data-glide-dir=">"
                                 aria-label="Next slide"
                             >
-                                <p>&gt;</p>
+                                &gt;
                             </button>
                         </div>
                     </div>
@@ -367,15 +379,17 @@
                             <div class="card-left__icons">
                                 <i
                                     class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                                 <i
                                     class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
                                 ></i>
                             </div>
                         </div>
                         <div class="card-right author-card-right">
                             <img
-                                src="/assets/images/Perfil-escritora 1.png"
+                                src="/assets/images/Perfil-escritora-1.png"
                                 alt="Photo of author Juliana Agarikov"
                                 class="card-right__img author-card-right__img"
                             />
@@ -393,8 +407,16 @@
         <section class="recent-section">
             <h2 class="recent-section__header">RECENTLY VISITED TOPICS</h2>
             <div class="btn-container">
-                <button type="button" class="btn">Android</button>
-                <button type="button" class="btn">Marketing Digital</button>
+                <button type="button" class="btn" aria-label="Android">
+                    Android
+                </button>
+                <button
+                    type="button"
+                    class="btn"
+                    aria-label="Marketing Digital"
+                >
+                    Marketing Digital
+                </button>
                 <button type="button" class="btn">Agile</button>
                 <button type="button" class="btn">Startups</button>
                 <button type="button" class="btn">HTML & CSS</button>
@@ -414,7 +436,10 @@
                 </p>
             </div>
             <div class="newsletter-section__input-container">
-                <i class="fa-regular fa-envelope newsletter-section__icon"></i>
+                <i
+                    class="fa-regular fa-envelope newsletter-section__icon"
+                    aria-hidden="true"
+                ></i>
                 <input
                     type="text"
                     class="newsletter-section__input"

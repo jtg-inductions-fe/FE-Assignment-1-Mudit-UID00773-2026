@@ -30,9 +30,8 @@
 
         @include respond-to('desktop') {
             @include all-center;
-            justify-content: center;
             align-items: flex-end;
-            gap: rem(0);
+            gap: rem(100);
             padding: rem(72) rem(140) rem(120) rem(140);
         }
     }
