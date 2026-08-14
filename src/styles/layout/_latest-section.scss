@@ -1,0 +1,38 @@
+@use '../abstract' as *;
+
+.latest-section,
+.bestseller-section {
+    &__header {
+        background: $color-bg-regular;
+        padding: rem(18);
+
+        @include all-center;
+        @include respond-to('tablet') {
+            padding: rem(40);
+        }
+
+        h2 {
+            font-size: rem($font-size-larger);
+
+            @include respond-to('tablet') {
+                font-size: rem(28);
+            }
+        }
+    }
+
+    &__container {
+        background: $color-bg-light;
+        padding-bottom: rem(20);
+
+        @include respond-to('tablet') {
+            padding-bottom: rem(48);
+        }
+
+        @include respond-to('desktop') {
+            @include all-center;
+            align-items: flex-end;
+            gap: rem(100);
+            padding: rem(72) rem(140) rem(120) rem(140);
+        }
+    }
+}

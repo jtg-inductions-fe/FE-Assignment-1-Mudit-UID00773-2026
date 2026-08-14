@@ -1,0 +1,125 @@
+@use '../abstract' as *;
+
+.carousel-container {
+    // width: 100%;
+    // overflow: hidden;
+    padding: rem(12) rem(0);
+    position: relative;
+
+    @include all-center(column);
+    @include respond-to('tablet') {
+        padding: rem(30) rem(0);
+    }
+    @include respond-to('desktop') {
+        padding: 0;
+    }
+}
+
+.carousel {
+    position: relative;
+    max-width: rem(724);
+    margin: 0 auto;
+
+    @include respond-to('desktop') {
+        max-width: rem(672);
+    }
+
+    &__bullets {
+        display: flex;
+        gap: rem(8);
+        z-index: 10;
+        margin-bottom: rem(16);
+
+        @include all-center;
+        @include respond-to('tablet') {
+            gap: rem(12);
+            margin-bottom: rem(76);
+        }
+        @include respond-to('desktop') {
+            padding: 0;
+            margin-bottom: rem(40);
+        }
+    }
+
+    &__bullet {
+        width: rem(8);
+        height: rem(8);
+        border-radius: 50%;
+        border: none;
+        background: $color-bg-btn-inactive;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        @include respond-to('tablet') {
+            width: rem(12);
+            height: rem(12);
+        }
+
+        &.glide__bullet--active {
+            background: $color-bg-gradient;
+        }
+    }
+
+    &__tracks {
+        height: rem(250);
+
+        @include respond-to('tablet') {
+            height: rem(280);
+        }
+    }
+
+    &__item {
+        text-align: center;
+        @include all-center;
+
+        img {
+            height: rem(248);
+            object-fit: cover;
+
+            @include respond-to('tablet') {
+                height: rem(268);
+            }
+            @include respond-to('desktop') {
+                height: rem(260);
+            }
+        }
+    }
+
+    &__arrows {
+        display: none;
+
+        @include respond-to('tablet') {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            gap: rem(50);
+            bottom: 48%;
+            background-color: red;
+        }
+    }
+
+    &__arrow {
+        background: $color-bg-gradient;
+        width: rem(48);
+        height: rem(48);
+        border-radius: 100%;
+        text-align: center;
+        color: $color-text-white;
+        @include all-center;
+        box-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, 0.5);
+
+        p {
+            font-weight: $font-weight-bold;
+        }
+
+        &--left {
+            position: absolute;
+            left: rem(-38);
+        }
+        &--right {
+            position: absolute;
+            right: rem(-38);
+        }
+    }
+}

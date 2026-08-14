@@ -1,0 +1,79 @@
+@use '../abstract' as *;
+
+.hero-section {
+    padding: rem(36) rem(24) rem(30) rem(24);
+    background: $color-bg-gradient;
+    gap: rem(14);
+
+    @include all-center(column);
+    @include respond-to('tablet') {
+        padding: rem(94) rem(94) rem(82) rem(94);
+        gap: rem(8);
+    }
+
+    &__info {
+        color: $color-text-white;
+        font-weight: $font-weight-regular;
+        font-size: rem($font-size-larger);
+        text-align: center;
+        padding: 0 rem(56);
+        line-height: 120%;
+    }
+
+    &__input-container {
+        position: relative;
+        width: 100%;
+        margin-top: rem(6);
+
+        @include all-center;
+        @include respond-to('tablet') {
+            margin-top: rem(16);
+        }
+    }
+
+    &__input-icon {
+        position: absolute;
+        color: $color-text-white;
+        pointer-events: none;
+        font-size: rem($font-size-regular);
+        left: calc(50% - rem(128));
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond-to('tablet') {
+            left: calc(50% - rem(240) + rem(100));
+            font-size: rem($font-size-large);
+        }
+        @include respond-to('desktop') {
+            left: calc(50% - rem(290) + rem(140));
+        }
+    }
+
+    &__input {
+        background: transparent;
+        width: 100%;
+        border: rem(2) solid $color-text-white;
+        padding: rem(14) rem(24);
+        border-radius: rem(32);
+        text-align: center;
+        color: $color-text-white;
+
+        @include respond-to('tablet') {
+            width: rem(480);
+            padding: rem(20);
+        }
+        @include respond-to('desktop') {
+            width: rem(580);
+        }
+
+        &::placeholder {
+            color: $color-text-white;
+            font-weight: $font-weight-regular;
+            font-size: rem($font-size-regular);
+
+            @include respond-to('tablet') {
+                font-size: rem($font-size-large);
+            }
+        }
+    }
+}

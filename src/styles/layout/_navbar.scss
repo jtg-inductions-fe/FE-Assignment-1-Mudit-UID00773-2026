@@ -1,0 +1,187 @@
+@use '../abstract' as *;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $color-bg-regular;
+
+    @include respond-to('tablet') {
+        padding: rem(0) rem(64);
+    }
+
+    &__menu-icon {
+        width: rem(36);
+        height: rem(36);
+        padding: rem(22);
+    }
+
+    &__menu-icon-container {
+        color: $color-bg-gradient;
+
+        &--clicked {
+            color: $color-text-white;
+            background: $color-bg-gradient;
+        }
+    }
+
+    &__menu-container {
+        position: relative;
+
+        @include respond-to('tablet') {
+            display: none;
+        }
+    }
+
+    &__menu-dropdown {
+        position: absolute;
+        z-index: 10;
+        width: rem(300);
+    }
+
+    &__menu-dropdown-list {
+        padding-top: rem(4);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: $color-text-white;
+    }
+
+    &__menu-dropdown-item {
+        font-size: $font-size-regular;
+        font-weight: $font-weight-regular;
+        font-family: Poppins;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: $color-text-secondary;
+        padding: rem(20) rem(24);
+        text-align: left;
+        width: rem(300);
+
+        &:hover {
+            font-weight: $font-weight-bold;
+            text-transform: capitalize;
+            color: $color-text-primary;
+        }
+    }
+
+    &__logo-conatiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(12);
+    }
+
+    &__logo-text {
+        font-size: rem($font-size-largest);
+        font-family: Josefin-Sans;
+        margin: rem(8) rem(8) 0 0;
+        display: none;
+        letter-spacing: rem(1.5);
+
+        &--bold {
+            font-weight: 900;
+        }
+
+        @include respond-to('tablet') {
+            display: flex;
+        }
+    }
+
+    &__logo-icon {
+        width: rem(40);
+        height: rem(40);
+        margin-left: rem(16);
+    }
+
+    &__links-container {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-left: rem(42);
+
+        @include respond-to('tablet') {
+            display: flex;
+        }
+    }
+
+    &__link-item {
+        padding: rem(12);
+        position: relative;
+
+        &:hover {
+            background: $color-bg-gradient;
+            color: $color-text-white;
+        }
+
+        a {
+            font-family: Poppins;
+        }
+    }
+
+    &__link-dropdown {
+        margin-top: rem(12);
+        position: absolute;
+        z-index: 2;
+        width: auto;
+        margin-left: rem(-12);
+    }
+
+    &__link-dropdown-item {
+        padding: rem(16);
+        text-transform: uppercase;
+        color: $color-text-secondary;
+        width: 100%;
+        text-align: left;
+
+        &:hover {
+            background: $color-bg-gradient;
+            color: $color-text-white;
+        }
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: rem(12);
+        padding: rem(16) rem(24);
+
+        @include respond-to('tablet') {
+            gap: rem(48);
+            padding: rem(18) rem(10);
+        }
+        @include respond-to('desktop') {
+            gap: rem(116);
+        }
+    }
+
+    &__option-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(8);
+    }
+
+    &__option-container:nth-child(1) {
+        @include respond-to('tablet') {
+            display: none;
+        }
+    }
+
+    &__option-text {
+        display: none;
+        font-size: rem($font-size-larger);
+
+        @include respond-to('desktop') {
+            display: block;
+        }
+    }
+
+    &__option-icon {
+        width: rem(32);
+        height: rem(32);
+        padding: rem(8);
+        color: $color-text-secondary;
+    }
+}

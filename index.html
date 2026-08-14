@@ -1,13 +1,619 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Alurabooks</title>
+        <meta
+            name="description"
+            content="Explore and buy the books at Alurabooks"
+        />
+        <link rel="icon" type="image/png" href="/assets/images/Logo.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/styles/main.scss" />
     </head>
     <body>
-        <div>Hello World</div>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <div class="navbar__menu-container">
+                <button
+                    class="navbar__menu-icon-container js-menu-toggle"
+                    aria-label="menu-toggle"
+                >
+                    <i class="fa-solid fa-bars navbar__menu-icon"></i>
+                </button>
+                <div class="navbar__menu-dropdown u-hidden js-menu-dropdown">
+                    <ul class="navbar__menu-dropdown-list">
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Categories
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Front-End
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Infratructure
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Buisness
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Programming
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__menu-dropdown-item">
+                                Design & UX
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar__logo-conatiner">
+                <img
+                    src="/assets/images/Logo.png"
+                    alt="AluraBooks"
+                    class="navbar__logo-icon"
+                />
+                <span class="navbar__logo-text">
+                    <span class="navbar__logo-text--bold">Alura</span>Books
+                </span>
+            </div>
+
+            <!-- Desktop icons -->
+            <div class="navbar__links-container">
+                <div class="navbar__link-item js-link-item">
+                    <a href="#">CATEGORIES</a>
+                    <ul class="navbar__link-dropdown u-hidden js-link-dropdown">
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Programming
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Front-End
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Infratructure
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Buisness
+                            </button>
+                        </li>
+                        <li>
+                            <button class="navbar__link-dropdown-item">
+                                Design & UX
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__link-item">
+                    <a href="#">FAVORITES</a>
+                </div>
+                <div class="navbar__link-item">
+                    <a href="#">MY BOOKSHELF</a>
+                </div>
+            </div>
+
+            <div class="navbar__options">
+                <button class="navbar__option-container" aria-label="Favorite">
+                    <i class="fa-regular fa-heart navbar__option-icon"></i>
+                </button>
+                <button class="navbar__option-container" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping navbar__option-icon"></i>
+                    <span class="navbar__option-text">My Bag</span>
+                </button>
+                <button
+                    class="navbar__option-container"
+                    aria-label="My Profile"
+                >
+                    <i
+                        class="fa-regular fa-circle-user navbar__option-icon"
+                    ></i>
+                    <span class="navbar__option-text">My Profile</span>
+                </button>
+            </div>
+        </nav>
+
+        <main class="hero-section">
+            <h1 class="hero-section__heading">
+                Do you already know where to start?
+            </h1>
+            <p class="hero-section__info">
+                Find what you need for your development on our bookshelf!
+            </p>
+
+            <div class="hero-section__input-container">
+                <i
+                    class="fa-solid fa-magnifying-glass hero-section__input-icon"
+                    aria-hidden="true"
+                ></i>
+                <input
+                    type="text"
+                    class="hero-section__input"
+                    placeholder="What will your next read be?"
+                    aria-label="Search for book to read"
+                />
+            </div>
+        </main>
+
+        <section class="latest-section">
+            <div class="latest-section__header">
+                <h2>LATEST RELEASE</h2>
+            </div>
+            <div class="latest-section__container">
+                <div class="carousel-container">
+                    <div class="glide carousel">
+                        <div
+                            class="glide__bullets carousel__bullets"
+                            data-glide-el="controls[nav]"
+                        >
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=0"
+                                aria-label="Go to slide 1"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=1"
+                                aria-label="Go to slide 2"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=2"
+                                aria-label="Go to slide 3"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=3"
+                                aria-label="Go to slide 4"
+                            ></button>
+                        </div>
+
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides carousel__items">
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/ApacheKafka.png"
+                                        alt="ApacheKafka course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Liderança.png"
+                                        alt="Liderança course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Javascript.png"
+                                        alt="Javascript course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Portugol.png"
+                                        alt="Logic Portugol course banner"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="glide__arrows carousel__arrows"
+                            data-glide-el="controls"
+                        >
+                            <button
+                                class="glide__arrow glide__arrow--left carousel__arrow carousel__arrow--left"
+                                data-glide-dir="<"
+                                aria-label="Previous slide"
+                            >
+                                &lt;
+                            </button>
+                            <button
+                                class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
+                                data-glide-dir=">"
+                                aria-label="Next slide"
+                            >
+                                &gt;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-left">
+                            <h3 class="card-left__heading--primary">
+                                You might also be interested in...
+                            </h3>
+                            <h3 class="card-left__heading--secondary">
+                                Angular 11 and Firebase
+                            </h3>
+                            <p class="card-left__info">
+                                Building an application integrated with the
+                                Google platform.
+                            </p>
+                            <div class="card-left__icons">
+                                <i
+                                    class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <img
+                                src="/assets/images/Perfil-escritora-2.png"
+                                alt="Angular"
+                                class="card-right__img"
+                            />
+                            <button class="card-right__button">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestseller-section">
+            <div class="bestseller-section__header">
+                <h2>BESTSELLER</h2>
+            </div>
+            <div class="bestseller-section__container">
+                <div class="carousel-container">
+                    <div class="glide carousel">
+                        <div
+                            class="glide__bullets carousel__bullets"
+                            data-glide-el="controls[nav]"
+                        >
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=0"
+                                aria-label="Go to slide 1"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=1"
+                                aria-label="Go to slide 2"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=2"
+                                aria-label="Go to slide 3"
+                            ></button>
+                            <button
+                                class="glide__bullet carousel__bullet"
+                                data-glide-dir="=3"
+                                aria-label="Go to slide 4"
+                            ></button>
+                        </div>
+
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides carousel__items">
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Javascript.png"
+                                        alt="Javascript course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/ApacheKafka.png"
+                                        alt="ApacheKafka course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Liderança.png"
+                                        alt="Liderança course banner"
+                                    />
+                                </li>
+                                <li class="glide__slide carousel__item">
+                                    <img
+                                        src="/assets/images/Portugol.png"
+                                        alt="Logic Portugol course banner"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="glide__arrows carousel__arrows"
+                            data-glide-el="controls"
+                        >
+                            <button
+                                class="glide__arrow glide__arrow--left carousel__arrow carousel__arrow--left"
+                                data-glide-dir="<"
+                                aria-label="Previous slide"
+                            >
+                                &lt;
+                            </button>
+                            <button
+                                class="glide__arrow glide__arrow--right carousel__arrow carousel__arrow--right"
+                                data-glide-dir=">"
+                                aria-label="Next slide"
+                            >
+                                &gt;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-left">
+                            <div class="star-container">
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </div>
+                            <h3 class="card-left__heading--primary">
+                                Author of the month
+                            </h3>
+                            <h3 class="card-left__heading--secondary">
+                                Juliana Agarikov
+                            </h3>
+                            <p class="card-left__info">
+                                A systems analyst and writer, Juliana
+                                specializes in front- end development.
+                            </p>
+                            <div class="card-left__icons">
+                                <i
+                                    class="fa-regular fa-heart card-left__icon"
+                                    aria-hidden="true"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-bag-shopping card-left__icon"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="card-right author-card-right">
+                            <img
+                                src="/assets/images/Perfil-escritora-1.png"
+                                alt="Photo of author Juliana Agarikov"
+                                class="card-right__img author-card-right__img"
+                            />
+                            <button
+                                class="card-right__button author-card-right__button"
+                            >
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-section">
+            <h2 class="recent-section__header">RECENTLY VISITED TOPICS</h2>
+            <div class="btn-container">
+                <button type="button" class="btn" aria-label="Android">
+                    Android
+                </button>
+                <button
+                    type="button"
+                    class="btn"
+                    aria-label="Marketing Digital"
+                >
+                    Marketing Digital
+                </button>
+                <button type="button" class="btn">Agile</button>
+                <button type="button" class="btn">Startups</button>
+                <button type="button" class="btn">HTML & CSS</button>
+                <button type="button" class="btn">Python</button>
+                <button type="button" class="btn">OO</button>
+                <button type="button" class="btn">Java</button>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-section__info-container">
+                <h2 class="newsletter-section__heading">
+                    Stay up to date with the latest news!
+                </h2>
+                <p class="newsletter-section__info">
+                    E-book updates, new books, promotions, and more.
+                </p>
+            </div>
+            <div class="newsletter-section__input-container">
+                <i
+                    class="fa-regular fa-envelope newsletter-section__icon"
+                    aria-hidden="true"
+                ></i>
+                <input
+                    type="text"
+                    class="newsletter-section__input"
+                    placeholder="Sign up with your email"
+                    aria-label="Sign up"
+                />
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__heading-container">
+                <h2 class="footer__heading">Alura Group</h2>
+            </div>
+            <div class="footer__flex">
+                <div class="footer__container">
+                    <h2 class="footer__sub-heading">EDUCATION</h2>
+                    <div class="logo-container">
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-1-1.png"
+                                alt="Caelum"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Caelum</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-1-2.png"
+                                alt="Casa do Código"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Casa do Código</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__container">
+                    <h2 class="footer__sub-heading">ONLINE EDUCATION</h2>
+                    <div class="logo-container">
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-1.png"
+                                alt="Alura"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Alura</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-2.png"
+                                alt="Alura Para Empresas"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">
+                                Alura Para Empresas
+                            </p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-3.png"
+                                alt="Alura LATAM"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Alura LATAM</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-4.png"
+                                alt="Alura Start"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Alura Start</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-5.png"
+                                alt="MusicDot"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">MusicDot</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-6.png"
+                                alt="Alura Língua"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Alura Língua</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-2-7.png"
+                                alt="PM3"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">PM3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__container">
+                    <h2 class="footer__sub-heading">COMMUNITY</h2>
+                    <div class="logo-container">
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-1.png"
+                                alt="Hipsters ponto Tech"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">
+                                Hipsters ponto Tech
+                            </p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-2.png"
+                                alt="Scuba Dev"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Scuba Dev</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-3.png"
+                                alt="Layers ponto Tech"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">
+                                Layers ponto Tech
+                            </p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-4.png"
+                                alt="Like a Boss"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">Like a Boss</p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-5.png"
+                                alt="Carreira sem Fronteira"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">
+                                Carreira sem Fronteira
+                            </p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-6.png"
+                                alt="Hipsters ponto Jobs"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">
+                                Hipsters ponto Jobs
+                            </p>
+                        </div>
+                        <div class="logo-container__item">
+                            <img
+                                src="/assets/images/footer-3-7.png"
+                                alt="GUJ"
+                                class="logo-container__logo"
+                            />
+                            <p class="logo-container__info">GUJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://kit.fontawesome.com/d0e6bd4543.js"
+            crossorigin="anonymous"
+        ></script>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>

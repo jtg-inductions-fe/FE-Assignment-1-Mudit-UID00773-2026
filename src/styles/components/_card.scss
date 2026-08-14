@@ -1,0 +1,211 @@
+@use '../abstract' as *;
+
+.card-container {
+    padding: rem(0) rem(24);
+    height: 100%;
+    margin-top: rem(8);
+    margin: rem(8) auto rem(0);
+
+    @include all-center;
+    align-items: stretch;
+
+    @include respond-to('tablet') {
+        margin-top: rem(28);
+    }
+
+    @include respond-to('desktop') {
+        min-width: rem(636);
+        padding: 0;
+        margin: 0;
+        flex-shrink: 5;
+    }
+}
+
+.card {
+    padding: rem(16) rem(16) rem(24) rem(16);
+    justify-content: space-between;
+    align-items: center;
+    background: $color-bg-regular;
+    gap: rem(16);
+    border-radius: rem(10);
+    box-shadow: rem(0) rem(4) rem(8) rgba(0, 0, 0, 0.25);
+    max-width: rem(636);
+
+    @include all-center;
+    @include respond-to('tablet') {
+        padding: rem(20) rem(20) rem(16) rem(16);
+    }
+    @include respond-to('desktop') {
+        gap: rem(80);
+        padding: rem(20) rem(20) rem(16) rem(16);
+    }
+}
+
+.card-left {
+    @include all-center(column);
+    align-items: flex-start;
+    gap: rem(8);
+    position: relative;
+    height: 100%;
+
+    @include respond-to('tablet') {
+        gap: rem(4);
+        justify-content: flex-start;
+        padding-top: rem(8);
+    }
+
+    @include respond-to('desktop') {
+        padding-top: rem(0);
+    }
+
+    &__icons {
+        justify-content: flex-start;
+        gap: rem(16);
+        padding: rem(8) rem(6);
+        margin-top: auto;
+
+        @include all-center;
+        @include respond-to('tablet') {
+            margin-top: rem(54);
+            padding: rem(0) rem(0);
+            position: absolute;
+            z-index: 1;
+            bottom: rem(18);
+            left: rem(-4);
+        }
+        @include respond-to('desktop') {
+            bottom: rem(4);
+        }
+    }
+
+    &__icon {
+        font-size: rem(28);
+    }
+
+    &__heading--primary {
+        font-family: Poppins;
+        line-height: 155%;
+        font-size: rem($font-size-regular);
+        font-weight: $font-weight-bold;
+        letter-spacing: rem(0.3);
+        color: $color-text-primary;
+
+        @include respond-to('tablet') {
+        }
+        @include respond-to('desktop') {
+            font-size: rem($font-size-largest);
+            max-width: rem(352);
+            padding-right: rem(0);
+            line-height: 135%;
+        }
+    }
+
+    &__heading--secondary {
+        font-family: Poppins;
+        line-height: 155%;
+        font-size: rem($font-size-large);
+        font-weight: $font-weight-bold;
+        letter-spacing: rem(0.3);
+        color: $color-text-secondary;
+
+        @include respond-to('tablet') {
+            margin-top: rem(4);
+        }
+    }
+
+    &__info {
+        color: $color-text-regular;
+        font-size: rem($font-size-small);
+        font-family: Poppins;
+        padding-right: rem(28);
+        margin-top: rem(-4);
+        line-height: 150%;
+
+        @include respond-to('tablet') {
+            margin-top: rem(2);
+            padding-right: rem(48);
+            font-size: rem($font-size-regular);
+        }
+        @include respond-to('desktop') {
+            max-width: rem(320);
+            padding-right: rem(0);
+            margin-bottom: rem(40);
+        }
+    }
+}
+
+.star {
+    color: $color-bg-primary;
+    font-size: rem(10);
+}
+
+.star-container {
+    @include all-center;
+
+    gap: rem(6);
+    margin: rem(8) rem(0) rem(8);
+}
+
+.card-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: rem(36);
+    width: fit-content;
+    flex-shrink: 0;
+    padding-top: 4px;
+
+    @include respond-to('tablet') {
+        gap: rem(28);
+    }
+    @include respond-to('desktop') {
+        gap: rem(40);
+    }
+
+    &__button {
+        padding: rem(16) rem(34);
+        font-family: Poppins;
+        font-size: rem($font-size-regular);
+        font-weight: $font-weight-bold;
+        background-color: $color-bg-primary;
+        color: $color-text-white;
+
+        @include respond-to('tablet') {
+            padding: rem(16) rem(30);
+            margin-bottom: rem(8);
+        }
+        @include respond-to('desktop') {
+            margin-bottom: rem(0);
+        }
+    }
+
+    &__img {
+        width: rem(164);
+        height: rem(164);
+
+        @include respond-to('tablet') {
+            width: rem(146);
+            height: rem(146);
+        }
+    }
+}
+
+.author-card-right {
+    gap: rem(40);
+
+    @include respond-to('desktop') {
+        gap: rem(28);
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &__img {
+        width: rem(160);
+        height: rem(160);
+    }
+}

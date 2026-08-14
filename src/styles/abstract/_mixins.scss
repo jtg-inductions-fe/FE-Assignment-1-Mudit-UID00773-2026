@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'sass:map';
+
+@mixin respond-to($breakpoint-name) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint-name);
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+@mixin all-center($direction: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
